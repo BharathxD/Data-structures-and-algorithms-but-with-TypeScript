@@ -3,9 +3,9 @@
  * @param {number[]} asteroids
  * @return {number[]}
  */
-var asteroidCollision = function (asteroids) {
+var asteroidCollision = function (asteroids: number[]): number[] {
   // Declare an array which works like a stack
-  let stack = [];
+  let stack: number[] = [];
   for (let i = 0; i < asteroids.length; i++) {
     if (stack.length === 0 || asteroids[i] > 0) stack.push(asteroids[i]);
     // If the stack is empty or a positive value arrives, then do a blind insertion
@@ -40,7 +40,6 @@ var asteroidCollision = function (asteroids) {
       }
     }
   }
-  console.log(stack);
   const resultArray = Array(stack.length);
   // Populate the result array from the last
   for (let i = resultArray.length - 1; i >= 0; i--) {

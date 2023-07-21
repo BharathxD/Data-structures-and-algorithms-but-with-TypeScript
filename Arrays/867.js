@@ -4,7 +4,7 @@
  */
 
 var transpose = (matrix) => {
-  let result = Array(matrix[0].length).fill(Array(matrix.length));
+  let result = Array(matrix[0].length);
   for (let i = 0; i < matrix[0].length; i++) {
     let arr = Array(matrix.length);
     result[i] = arr;
