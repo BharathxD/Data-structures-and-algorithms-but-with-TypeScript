@@ -52,9 +52,3 @@ function threeSum(nums: number[]): number[][] {
     }
     return result;
 };
-
-/**
- * Test Cases
- */
-const nums = [-2, 0, 1, 1, 2]
-console.log(threeSum(nums)); // [[-2,0,2],[-2,1,1]]
