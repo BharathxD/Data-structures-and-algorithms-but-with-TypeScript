@@ -7,12 +7,12 @@ let arr: number[] = [];
  * @return {number[] | undefined}
  */
 function f(i: number, n: number): number[] | undefined {
-    // BASE CASE: Don't do anything if the i > n
+    // Don't do anything if the i > n
     if (i > n) return;
-    // SELF WORK: Only if `i` is not zero, we need to push the `i` to the array
+    // Only if `i` is not zero, we need to push the `i` to the array
     if (i !== 0) arr.push(i);
     // If `i` is zero we need to start the loop from 1, or else we can start the loop from 0
-    for (let j = !i ? 1 : 0; j <= n; j++) {
+    for (let j = !i ? 1 : 0; j <= 9; j++) {
         f(10 * i + j, n);
     }
 }
@@ -33,6 +33,6 @@ function lexicalOrder(n: number): number[] {
 /**
  * Test Cases
  */
-const n = 13;
+const n = 14;
 const result = lexicalOrder(n);
 console.log(result)
