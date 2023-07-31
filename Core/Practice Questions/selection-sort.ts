@@ -7,10 +7,8 @@ export function swap(i: number, j: number, arr: number[]) {
 export default function insertionSort(arr: Array<number>): Array<number> {
     for (let i = 0; i < arr.length; i++) {
         for (let j = i; j < arr.length; j++) {
-            if (arr[j] < arr[i]) {
-                swap(i, j, arr);
-            }
+            if (arr[j] < arr[i]) swap(i, j, arr);
         }
     }
-    return arr
+    return arr;
 }
