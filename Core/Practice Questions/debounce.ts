@@ -1,14 +1,14 @@
-type DebounceFunction = <T extends (...args: any[]) => any>(func: T, delay: number) => (...args: Parameters<T>) => Promise<ReturnType<T>>;
+type Debounce = <T extends (...args: any[]) => any>(func: T, delay: number) => (...args: Parameters<T>) => void;
 
-const debounce: DebounceFunction = (func, delay) => {
+const debounce: Debounce = (cb, delay) => {
     let timeoutId: ReturnType<typeof setTimeout>;
-    return (...args: any[]) => new Promise<ReturnType<typeof func>>((resolve) => {
+    return (...args: any[]) => {
         clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => resolve(func(...args)), delay)
-    })
+        timeoutId = setTimeout(() => cb(...args), delay);
+    }
 }
 
-const debouncedFunction = debounce((input: string) => console.log(`debounce: ${input}`), 300);
+const debouncedFunction = debounce((input: string) => input, 300);
 
 debouncedFunction('A');
 debouncedFunction('B');
