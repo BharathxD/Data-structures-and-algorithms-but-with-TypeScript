@@ -13,6 +13,11 @@ const throttle: ThrottleFunction = (func, delay) => {
 
 const expensiveFunction = throttle((input: string) => console.log(input), 300);
 
+// Executed
 expensiveFunction('A');
+// Throttled : time: 100ms
 expensiveFunction('B');
+// Throttled : time: 200ms
 expensiveFunction('C');
+// Executed: time: 300ms
+// ...
