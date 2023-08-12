@@ -12,4 +12,8 @@ const debouncedFunction = debounce((input: string) => input, 300);
 
 debouncedFunction('A');
 debouncedFunction('B');
+/**
+ * Before calling the below function, the timeouts of the previous function will be cleared
+ * That means the above function will not get executed
+ */
 debouncedFunction('C');
