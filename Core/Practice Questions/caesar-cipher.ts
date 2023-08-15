@@ -1,3 +1,10 @@
+/**
+ * Encrypts a given word using the Caesar cipher with a specified shift.
+ *
+ * @param word - The input word to be encrypted.
+ * @param shift - The amount by which each letter in the word should be shifted.
+ * @returns The encrypted word.
+ */
 const caesarEncrypt = (word: string, shift: number): string => {
     const ALPHABETS = 'abcdefghijklmnopqrstuvxyz';
     const encryptedText = word.split('').map((char: string) => {
