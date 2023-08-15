@@ -19,6 +19,13 @@ const caesarEncrypt = (word: string, shift: number): string => {
     return encryptedText;
 }
 
+/**
+ * Decrypts a given encrypted word using the Caesar cipher with a specified shift.
+ *
+ * @param word - The encrypted word to be decrypted.
+ * @param shift - The amount by which each letter in the word was originally shifted.
+ * @returns The decrypted word.
+ */
 const caesarDecrypt = (word: string, shift: number): string => caesarEncrypt(word, -shift);
 
 const originalText = 'Hello';
