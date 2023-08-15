@@ -1,5 +1,7 @@
 /**
  * Encrypts a given word using the Caesar cipher with a specified shift.
+ * 
+ * `Limitation` It can only encrypt words with zerospaces and with no special chars
  *
  * @param word - The input word to be encrypted.
  * @param shift - The amount by which each letter in the word should be shifted.
@@ -31,8 +33,8 @@ const caesarDecrypt = (word: string, shift: number): string => caesarEncrypt(wor
 const originalText = 'Hello';
 const shiftAmount = 4;
 
-const encryptedText = caesarEncrypt(originalText, shiftAmount);
+const encryptedText = caesarEncrypt(originalText, shiftAmount); // Khoor
 console.log(`Encrypted: ${encryptedText}`);
 
-const decryptedText = caesarDecrypt(encryptedText, shiftAmount);
+const decryptedText = caesarDecrypt(encryptedText, shiftAmount); // Hello
 console.log(`Decrypted: ${decryptedText}`);
