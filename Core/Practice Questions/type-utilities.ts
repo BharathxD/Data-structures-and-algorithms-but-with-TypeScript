@@ -43,6 +43,11 @@ export function isSymbol(value: any): boolean {
     return typeof value === 'symbol'
 }
 
+/**
+ * Checks if a value is undefined.
+ * @param value - The value to be checked.
+ * @returns `true` if the value is undefined, otherwise `false`.
+ */
 export function isUndefined(value: any): boolean {
     return typeof value === 'undefined'
 }
