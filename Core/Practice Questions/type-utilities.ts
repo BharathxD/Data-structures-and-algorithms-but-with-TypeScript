@@ -16,6 +16,11 @@ export function isNumber(value: any): boolean {
     return typeof value === 'number'
 }
 
+/**
+ * Checks if a value is null.
+ * @param value - The value to be checked.
+ * @returns `true` if the value is null, otherwise `false`.
+ */
 export function isNull(value: any): boolean {
     return value === null
 }
