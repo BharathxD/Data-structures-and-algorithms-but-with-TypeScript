@@ -34,6 +34,11 @@ export function isString(value: any): boolean {
     return typeof value === 'string'
 }
 
+/**
+ * Checks if a value is a symbol.
+ * @param value - The value to be checked.
+ * @returns `true` if the value is a symbol, otherwise `false`.
+ */
 export function isSymbol(value: any): boolean {
     return typeof value === 'symbol'
 }
