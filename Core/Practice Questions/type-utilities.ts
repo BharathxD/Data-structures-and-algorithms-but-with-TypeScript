@@ -1,5 +1,10 @@
+/**
+ * Checks if a value is a boolean.
+ * @param value - The value to be checked.
+ * @returns `true` if the value is a boolean, otherwise `false`.
+ */
 export function isBoolean(value: any): boolean {
-    return typeof value === 'boolean'
+    return typeof value === 'boolean';
 }
 
 export function isNumber(value: any): boolean {
