@@ -25,6 +25,11 @@ export function isNull(value: any): boolean {
     return value === null
 }
 
+/**
+ * Checks if a value is a string.
+ * @param value - The value to be checked.
+ * @returns `true` if the value is a string, otherwise `false`.
+ */
 export function isString(value: any): boolean {
     return typeof value === 'string'
 }
