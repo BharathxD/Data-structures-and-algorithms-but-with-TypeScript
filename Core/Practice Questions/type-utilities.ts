@@ -7,6 +7,11 @@ export function isBoolean(value: any): boolean {
     return typeof value === 'boolean';
 }
 
+/**
+ * Checks if a value is a number.
+ * @param value - The value to be checked.
+ * @returns `true` if the value is a number, otherwise `false`.
+ */
 export function isNumber(value: any): boolean {
     return typeof value === 'number'
 }
