@@ -7,3 +7,4 @@ I have collected all the necessary resources and bundled them in this repository
 - [Arrays](./Arrays)
 - [Core](./Core)
 - [Recursion](./Recursion)
+- [Stacks](./Stacks)
