@@ -10,10 +10,14 @@
 var maxProfit = function (prices) {
   let cur_min = prices[0];
   let cur_profit = 0;
-  for (let i = 1; i < prices.length - 1; i++) {
-    // Can I buy?
+  // Loop through the array of prices starting from the second element.
+  for (let i = 1; i < prices.length; i++) {
+    // Check if the current price is lower than the current minimum price.
+    // If so, update the current minimum price.
     if (prices[i] < cur_min) cur_min = prices[i];
-    // Can I sell?
+
+    // Check if selling at the current price would yield a higher profit than
+    // the current maximum profit. If so, update the current maximum profit.
     if (prices[i] > cur_min)
       cur_profit = Math.max(cur_profit, prices[i] - cur_min);
   }
