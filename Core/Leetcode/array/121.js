@@ -26,3 +26,4 @@ var maxProfit = function (prices) {
 
 prices = [7, 1, 5, 3, 6, 4];
 console.log(maxProfit(prices));
+// Output: 5 (Buy at 1 and sell at 6 for a profit of 5)
