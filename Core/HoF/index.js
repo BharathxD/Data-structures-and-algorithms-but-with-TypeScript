@@ -24,7 +24,7 @@ console.log(customMap(array, (val) => val * val));
  * Filter should always return a boolean otherwise the output will coerced to a boolean
  */
 
-console.log(array.filter((value, index, originalArray) => value % 2 === 0));
+console.log(array.filter((value) => value % 2 === 0));
 
 /**
  * Reduce: HOF
